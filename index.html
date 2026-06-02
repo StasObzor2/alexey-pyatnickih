@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>О Виски и не только с Алексеем Пятницких | Новокубанское — экспертные обзоры коньяка</title>
+    <meta name="description" content="О Виски и не только с Алексеем Пятницких — блог на Дзен: честные обзоры коньяка, виски, бренди. Авторское мнение без рекламы, с лёгким юмором.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e0cfbc;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .article-banner {
+            max-width: 980px;
+            width: 100%;
+            background: #fffaf3;
+            border-radius: 48px;
+            box-shadow: 0 30px 50px -20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.8);
+            overflow: hidden;
+            border: 1px solid #e8d5bc;
+        }
+
+        .article-inner {
+            padding: 48px 52px;
+        }
+
+        .brand-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            border-bottom: 2px solid #eedfc8;
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        .brand-icon {
+            font-size: 2.4rem;
+            filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.1));
+        }
+        .brand-name {
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+            color: #2b291c;
+        }
+        .brand-name span {
+            color: #b47a41;
+        }
+        .expert-tag {
+            background: #e9d8c2;
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8b623b;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: #2b2a1e;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+        h1 a {
+            color: #b87a3a;
+            text-decoration: none;
+        }
+        h1 a:hover {
+            text-decoration: underline;
+        }
+        .lead {
+            font-size: 1rem;
+            color: #5c523b;
+            margin-bottom: 32px;
+            border-left: 3px solid #dfbc8c;
+            padding-left: 18px;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        .author-section {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 32px;
+        }
+        .avatar-box {
+            flex-shrink: 0;
+            text-align: center;
+        }
+        .avatar-circle {
+            background: #ede0cf;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.08);
+            border: 2px solid #fff0e2;
+        }
+        .avatar-caption {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #a07d50;
+            margin-top: 8px;
+        }
+        .bio-text {
+            flex: 1;
+        }
+        .bio-text p {
+            margin-bottom: 18px;
+            line-height: 1.55;
+            color: #3c3726;
+            font-size: 0.95rem;
+        }
+
+        .full-article {
+            margin-top: 8px;
+        }
+        .full-article h2 {
+            font-size: 1.55rem;
+            margin: 28px 0 14px 0;
+            color: #2f2b1c;
+            font-weight: 600;
+            border-left: 4px solid #c1925c;
+            padding-left: 16px;
+        }
+        .full-article h3 {
+            font-size: 1.25rem;
+            margin: 22px 0 12px 0;
+            color: #9b6a3a;
+            font-weight: 600;
+        }
+        .full-article p {
+            margin-bottom: 18px;
+            line-height: 1.55;
+            color: #3f3a28;
+            font-size: 0.96rem;
+        }
+        .full-article ul, .full-article ol {
+            margin: 12px 0 20px 30px;
+            color: #3f3a28;
+        }
+        .full-article li {
+            margin: 6px 0;
+            line-height: 1.5;
+        }
+        .full-article a {
+            color: #b87a3a;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #eedbbd;
+        }
+        .full-article a:hover {
+            border-bottom-color: #b87a3a;
+        }
+
+        .expert-cognacs {
+            background: #f6ede1;
+            border-radius: 28px;
+            padding: 22px 28px;
+            margin: 32px 0 28px;
+            border: 1px solid #ebd8be;
+        }
+        .expert-cognacs p {
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: #b47a41;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+        }
+        .cognac-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+        .cognac-links a {
+            background: #ffffffdb;
+            padding: 8px 20px;
+            border-radius: 60px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #5a3f22;
+            text-decoration: none;
+            border: 1px solid #e2cdad;
+            transition: all 0.2s;
+        }
+        .cognac-links a:hover {
+            background: #fff3e6;
+            border-color: #c19560;
+            color: #7b4f24;
+            transform: translateY(-1px);
+        }
+
+        .footer-note {
+            margin: 24px 0 32px 0;
+            padding: 16px 20px;
+            background: #fef7ef;
+            border-radius: 32px;
+            border: 1px solid #eedfc0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.8rem;
+            color: #ab8a5e;
+        }
+        .footer-note span {
+            font-weight: 400;
+        }
+        .footer-note a {
+            color: #946e41;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+        }
+        .footer-note a:hover {
+            border-bottom-color: #b47a41;
+            text-decoration: none;
+        }
+
+        @media (max-width: 720px) {
+            .article-inner {
+                padding: 28px 22px;
+            }
+            h1 {
+                font-size: 1.7rem;
+            }
+            .avatar-circle {
+                width: 70px;
+                height: 70px;
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="article-banner">
+    <div class="article-inner">
+        <div class="brand-head">
+            <div class="brand-logo">
+                <span class="brand-icon">🍇🥃</span>
+                <div class="brand-name">Новокубанское · <span>Алексей Пятницких</span></div>
+            </div>
+            <div class="expert-tag">виски · коньяк · Дзен</div>
+        </div>
+
+        <h1><a href="https://dzen.ru/alexeypyatnitskikh" target="_blank" rel="noopener noreferrer">О Виски и не только с Алексеем Пятницких</a> – эксперт, блоги и обзоры коньяка</h1>
+        <div class="lead">Блог на Дзен: виски, коньяк, бренди. Авторское мнение без рекламы, с лёгким юмором и глубоким погружением в тему дистиллятов.</div>
+
+        <div class="author-section">
+            <div class="avatar-box">
+                <div class="avatar-circle">🥃📘</div>
+                <div class="avatar-caption">Алексей Пятницких</div>
+            </div>
+            <div class="bio-text">
+                <p>«О Виски и не только с Алексеем Пятницких» – это блог на платформе Дзен, который ведет автор, искренне увлеченный темой «живой воды» (aqua vitae, uisce beatha и так далее). Проект посвящен виски во всех его проявлениях, но регулярно выходят материалы и о других напитках: коньяке, роме, бренди.</p>
+                <p>Ключевая особенность блога, по заявлению автора – полное отсутствие рекламы, только личное мнение и опыт автора, приправленные легким юмором. Смотреть и читать этот проект – получать совет от знающего человека, который помогает потребителю разбираться в многообразии напитков на полках.</p>
+            </div>
+        </div>
+
+        <div class="full-article">
+            <h2>О блоге О Виски и не только с Алексеем Пятницких</h2>
+            <p>«О Виски и не только с Алексеем Пятницких» – это личный проект автора, который посвятил много лет изучению виски и других крепких дистиллятов. Автор не позиционирует себя как гуру, но его рейтинг среди подписчиков стабильно высок благодаря честности и глубине. На его Дзен подписано более 25 тысяч человек. В центре внимания – виски: скотч, зерновой, солодовый, бленд, односолодовый, ирландский виски – и это далеко не все. Автор подробно объясняет, чем отличается бленд от односолодового виски, как производство влияет на вкус и почему uisce beatha называют «живой водой». Однако тема не ограничивается только виски. Регулярно выходят обзоры коньяка, бренди, рома и других напитков.</p>
+
+            <h2>Стиль подачи и формат контента</h2>
+            <p>Стиль блога – спокойный, доверительный, с элементами легкого юмора. Автор пишет и говорит как ценитель, который помнит, что сам когда-то был новичком. Он не перегружает текст сложными терминами без объяснения, но и не упрощает до примитива. Ключевые форматы контента:</p>
+            <p>● личные дегустации виски и коньяков с разбором органолептики;<br>
+            ● история возникновения марок и традиции производства.</p>
+            <p>Особенно ценно, что автор делится не только успехами, но и разочарованиями – это добавляет честности и доверия.</p>
+
+            <h2>Площадки блогера</h2>
+            <p>Основная и главная площадка проекта – это Дзен (Яндекс.Дзен). Именно здесь публикуются все статьи и видео про коньяк и виски. Кроме того, автора можно найти на других площадках:<br>
+            ● ВКонтакте: Страница для общения и анонсов новых материалов на Дзене;<br>
+            ● Telegram: Канал для оперативных новостей и обратной связи.</p>
+            <p>Наличие страницы на Яндекс.Дзене дает автору преимущество: его статьи легко находить через поисковую систему по запросам вроде «обзор виски» или «как выбирать коньяк».</p>
+
+            <h2>Обзоры коньяков Новокубанское</h2>
+            <p>Будучи истинным ценителем не только виски, но и других дистиллятов, автор блога «О Виски и не только с Алексеем Пятницких» не мог обойти вниманием продукцию Коньячного дома «Новокубанское». Особого внимания заслуживают его статьи:</p>
+            <p>1. <a href="https://novokubanskoe.ru/shop/n-nekrasov-15" target="_blank" rel="noopener noreferrer">Может быть интересным Н. Некрасов Коньяк Старый 15 лет.</a><br>
+            2. <a href="https://novokubanskoe.ru/shop/n-nekrasov-25" target="_blank" rel="noopener noreferrer">Коньяк Н. Некрасов 25 лет – можно сказать «он то, что надо».</a><br>
+            3. <a href="https://novokubanskoe.ru/shop/bolsoi-priz-6" target="_blank" rel="noopener noreferrer">Большой Приз 6 лет – станет ли новым лидером в категории КВ.</a></p>
+            <p>Автор подчеркнул, что российский коньяк от ЗАО «Новокубанское» – это марка, которая доказывает, что в России умеют делать хороший продукт.</p>
+
+            <!-- сноска -->
+            <div class="footer-note">
+                <span>🍇 Коньячный дом «Новокубанское» — традиции кубанского виноделия (с 1937 года)</span>
+                <a href="https://novokubanskoe.ru/catalog/" target="_blank" rel="noopener noreferrer">📖 Весь каталог коньяков →</a>
+                <a href="https://dzen.ru/alexeypyatnitskikh" target="_blank" rel="noopener noreferrer">🎥 Смотреть обзоры Алексея Пятницких</a>
+            </div>
+
+            <h2>Коньяк, который оценил эксперт</h2>
+            <p>Коньячный дом «Новокубанское» предлагает вам просмотреть каталог, в котором есть в том числе те напитки, которые высоко оценены автором Дзен-канала:</p>
+            <p>● <a href="https://novokubanskoe.ru/shop/bolsoi-priz-6" target="_blank" rel="noopener noreferrer"><strong>«Большой Приз» 6 лет</strong></a> – коньяк класса «Выдержанный», чей купаж создан в 1973 году спустя 6 лет после завоевания заводом третьего Гран-при в Кельне. Аромат мощный: тон чистого дуба уступает место нотам влажных сухофруктов, перца и шоколада. Вкус густой и насыщенный, при крепости 42% пьется мягко;<br>
+            ● <a href="https://novokubanskoe.ru/shop/n-nekrasov-15" target="_blank" rel="noopener noreferrer"><strong>«Н. Некрасов» 15 лет</strong></a> – выпущен в 2005 году к 60-летию Победы, первоначально продавался под брендом «Победа». Аромат уникален: сухие хвойные тона новогодней елки с осыпавшимися иголками, затем сухофрукты с черносливом и курагой. Вкус зрелый и плотный, послевкусие длительное с чайно-кофейной горчинкой;<br>
+            ● <a href="https://novokubanskoe.ru/shop/n-nekrasov-25" target="_blank" rel="noopener noreferrer"><strong>«Н. Некрасов» 25 лет</strong></a> – выпускается с 2001 года из дистиллятов урожая 1978-1982 годов. Аромат богатый: горький шоколад, дубовая смола, перец и фруктово-ванильные тона. Вкус мягкий и шелковистый, меняется от гречневого меда до горького шоколада.</p>
+            <p>В комментариях под статьями блогера можно ознакомиться и с другими мнениями о напитках Коньячного дома «Новокубанское».</p>
+
+            <h2>Заключение</h2>
+            <p>«О Виски и не только с Алексеем Пятницких» – это пример того, как один увлеченный человек может создать образовательный ресурс, полезный тысячам потребителей, в том числе тем, кто считает себя ценителями. Вы можете в этом убедиться, если ознакомитесь с блогом. Чтобы не пропустить новые материалы, можно подписаться на Яндекс.Дзен автора. Коньячный дом «Новокубанское» рекомендует вам не полагаться только на чужие оценки, а пробовать и сравнивать самостоятельно. Только ваши собственные впечатления станут самым надежным ориентиром в мире коньяка.</p>
+        </div>
+
+        <div class="expert-cognacs">
+            <p>🍇 КОНЬЯКИ, ПОЛУЧИВШИЕ ВЫСОКУЮ ОЦЕНКУ ЭКСПЕРТА</p>
+            <div class="cognac-links">
+                <a href="https://novokubanskoe.ru/shop/bolsoi-priz-6" target="_blank" rel="noopener noreferrer">«Большой Приз» 6 лет (КВ)</a>
+                <a href="https://novokubanskoe.ru/shop/n-nekrasov-15" target="_blank" rel="noopener noreferrer">«Н. Некрасов» 15 лет (КС)</a>
+                <a href="https://novokubanskoe.ru/shop/n-nekrasov-25" target="_blank" rel="noopener noreferrer">«Н. Некрасов» 25 лет (ОС)</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
